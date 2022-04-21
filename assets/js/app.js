@@ -37,13 +37,25 @@ const app = new Vue(
         },
         mounted: function() {
             this.startSlide();
-          },
+        },
+
+      
 
         methods: {
+
 
             startSlide: function() {
                 this.timer = setInterval(this.nextImage, 3000);
               },
+
+            pauseSlider () {
+                clearInterval(this.timer);
+            },
+
+            resumeSlider () {
+                this.timer = setInterval(this.nextImage, 3000);
+            },
+
             
             activateImage(imageIndex) {
                 this.activeImage = imageIndex;

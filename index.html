@@ -23,7 +23,7 @@
                     </div>
                 
                 <div class="thumbnails col-2">
-                    <img :src="images[index].image"  class="thumb" :class="activeImage === index ? 'active': '' " v-for="(image, index) in images"  @click="activateImage(index)">
+                    <img :src="images[index].image"  class="thumb" :class="activeImage === index ? 'active': '' " v-for="(image, index) in images"  @click="activateImage(index)" @mouseenter="pauseSlider" @mouseleave="resumeSlider" >
                     <div class="navigator d-flex flex-column">
                         <div @click="prevImage" class="prev"><i class="fa-solid fa-chevron-up"></i></div>
                         <div  @click="nextImage" class="next"><i class="fa-solid fa-chevron-down"></i></div>
