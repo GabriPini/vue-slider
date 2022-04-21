@@ -31,14 +31,14 @@ const app = new Vue(
                     text: 'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis.',
                 },
             ],
-
-            
-            
+    
             
         },
         methods: {
             
-      
+            activateImage(imageIndex) {
+                this.activeImage = imageIndex;
+            },
  
             prevImage(){
                 if(this.activeImage === 0)
