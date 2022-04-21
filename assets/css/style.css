@@ -28,6 +28,7 @@ img{
   text-align: end;
   left: 10%;
   font-weight: bold;
+
   
 
 }
@@ -35,10 +36,10 @@ img{
 .navigator{
   position: absolute;
   top: 0;
-  right: 90px;
+  right: 60px;
   margin: 10px 0;
   height: 100%;
-  gap: 85%;
+  gap: 80%;
 }
 
 
