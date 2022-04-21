@@ -28,18 +28,19 @@ img{
   text-align: end;
   left: 10%;
   font-weight: bold;
-
-  
-
 }
 
-.navigator{
+
+.prev{
   position: absolute;
-  top: 0;
-  right: 60px;
-  margin: 10px 0;
-  height: 100%;
-  gap: 80%;
+  right: 45%;
+  top: 5px;
+}
+
+.next{
+  position: absolute;
+  bottom: 5px;
+  right: 45%;
 }
 
 
@@ -50,6 +51,7 @@ img{
   padding: 0.3rem;
   cursor: pointer;
   color: black;
+  
 }
 .thumbnails{
   position: relative;

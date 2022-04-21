@@ -12,8 +12,8 @@
 <body>
     
     <div id="app">
-        <div class="container mt-5 ">
-            <div class="card d-flex flex-row ">
+        <div class="container mt-5 pt-5">
+            <div class="card d-flex flex-row">
                 <div class="col-10">  
                     <img class="main_img" :src="images[activeImage].image" :alt="'Foto' + images[activeImage].title">
                         <div class="img_text">
@@ -24,10 +24,10 @@
                 
                 <div class="thumbnails col-2">
                     <img :src="images[index].image"  class="thumb" :class="activeImage === index ? 'active': '' " v-for="(image, index) in images"  @click="activateImage(index)" @mouseenter="pauseSlider" @mouseleave="resumeSlider" >
-                    <div class="navigator d-flex flex-column">
-                        <div @click="prevImage" class="prev"><i class="fa-solid fa-chevron-up"></i></div>
+                
+                        <button @click="prevImage" class="prev"><i class="fa-solid fa-chevron-up"></i></button>
                         <div  @click="nextImage" class="next"><i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
+                    
                 </div>
                
             </div>
