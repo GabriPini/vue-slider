@@ -1,27 +1,3 @@
-/* MILE STONE 1
-Creiamo un oggetto Movie, con le seguenti proprietà:
-- images che conterra un lista di immagini 
--  title che conterra il titolo del film 
-- category che contiene la categiria del film 
-- lenght per la lunghezza del film in minuti
-*/
-
-/* Mile stone 2 
-creare il markup ed utilizzare le direttive vue per stapare a schermo il film in una card.
-mostando prima immagine poi titolo , categoria e lunghezza 
-*/
-
-/*Milestone 3
-Aggiungiamo 2 freccie al markup e utilizzamole per rendere dinamico lo slider.
-al click sulla freccia di destra si scorre all'immagine successiva 
-al click sulla freccia di sinistra si scorre al'immagine precedente
-
-*/
-
-/* Milestone 4
-Aggiungiamo Delle miniature delle altre immagini . evidenziamo l'immagine selezionata con un border . quando clicchiamo sulle freccie l'immagine evidenziata cambia 
-*/
-
 
 const app = new Vue(
     {
@@ -62,6 +38,8 @@ const app = new Vue(
         },
         methods: {
             
+      
+ 
             prevImage(){
                 if(this.activeImage === 0)
                 this.activeImage = this.images.length
@@ -77,6 +55,8 @@ const app = new Vue(
                     this.activeImage = 0
                 }
               } 
+
+            
         }
     },
 );
