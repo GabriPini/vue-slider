@@ -17,45 +17,50 @@ img{
   min-width: 100%;
   min-height: 100%;
   max-height: 300px;
+  
+}
+
+.p_relative{
   position: relative;
 }
 
 .img_text{
-  width: 70%;
+  width: 100%;
   color: white;
   position: absolute;
   bottom: 5%;
   text-align: end;
-  left: 10%;
+  padding-right: 20px;
   font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 
 .prev{
   position: absolute;
-  right: 45%;
-  top: 5px;
+  right: 40%;
+  top: 0;
 }
 
 .next{
   position: absolute;
-  bottom: 5px;
-  right: 45%;
+  bottom: 0;
+  right: 40%;
 }
 
 
 .prev, 
 .next{
-  background-color: rgba(239, 239, 239, 0.712);
-  border-radius: 50%;
-  padding: 0.3rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.712);
+  padding: 0.4rem;
   cursor: pointer;
-  color: black;
+  color: rgb(255, 255, 255);
   
 }
 .thumbnails{
   position: relative;
- 
+   
 }
 
 .thumbnails .thumb{

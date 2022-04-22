@@ -31,18 +31,15 @@ const app = new Vue(
                     text: 'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis.',
                 },
             ],
-            timer: null,
-    
-            
+            timer: null,           
         },
+        
         mounted: function() {
             this.startSlide();
         },
 
       
-
         methods: {
-
 
             startSlide: function() {
                 this.timer = setInterval(this.nextImage, 3000);
@@ -81,5 +78,3 @@ const app = new Vue(
         }
     },
 );
-
-   
